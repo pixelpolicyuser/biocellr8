@@ -591,13 +591,65 @@ a:hover {
     border: 1px solid var(--medium-gray);
 }
 
-.leader-placeholder {
-    background: linear-gradient(145deg, #E8F4F8, #D0E8F0);
+.leader-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.leader-logo-frame {
+    width: 168px;
+    height: 168px;
     border-radius: 9999px;
-    padding: 1.5rem;
+    background: var(--white);
+    border: 3px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),
+                inset 0 0 0 6px rgba(0, 212, 255, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 18px;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+}
+
+.leader-logo-frame:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12),
+                inset 0 0 0 6px rgba(0, 212, 255, 0.12);
+}
+
+.leader-logo {
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.06));
+}
+
+.leader-monogram {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: var(--gold);
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.leader-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.leader-badges img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.leader-badges img:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
 }
 
 .leader-info h3 {
