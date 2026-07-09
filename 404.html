@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | BioCellR8 LLC</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --navy: #0A192F;
+            --teal: #00D4FF;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0A192F 0%, #061220 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 520px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+        }
+        
+        .logo svg {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .logo span {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 5.5rem;
+            margin: 0 0 1rem;
+            line-height: 1;
+            color: #00D4FF;
+        }
+        
+        h2 {
+            font-size: 1.85rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 1.15rem;
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.25rem;
+            background: #00D4FF;
+            color: #0A192F;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #00A8CC;
+            transform: translateY(-2px);
+        }
+        
+        .home-link {
+            color: #00D4FF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg width="48" height="48" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="19" stroke="#00D4FF" stroke-width="2.5"/>
+                <path d="M12 21 Q21 12 30 21 Q21 30 12 21" stroke="#00D4FF" stroke-width="2" fill="none"/>
+                <circle cx="21" cy="21" r="4.5" fill="#C9A227"/>
+            </svg>
+            <span>BioCellR8</span>
+        </div>
+        
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        
+        <p>The page you're looking for has either moved or no longer exists. Let's get you back on track.</p>
+        
+        <a href="/" class="btn">Return to Homepage</a>
+        
+        <p style="margin-top: 3rem; font-size: 0.95rem; opacity: 0.6;">
+            Need assistance? <a href="mailto:info@biocellr8.com" class="home-link">Contact our team</a>
+        </p>
+    </div>
+</body>
+</html>

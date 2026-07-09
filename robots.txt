@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pixelpolicyuser.github.io/biocellr8/sitemap.xml
+
+# Disallow any future admin or staging areas
+Disallow: /admin/
+Disallow: /staging/
+Disallow: /private/
